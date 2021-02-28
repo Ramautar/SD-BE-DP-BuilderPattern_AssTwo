@@ -9,4 +9,20 @@ public class HouseA {
     private Address address;
     private HouseType houseType;
 
+    public HouseA(Address address,HouseType houseType){
+        this.address=address;
+        this.houseType=houseType;
+    }
+
+    public String getStreetName() {
+        return address.getStreetName();
+    }
+
+    public int getHouseNumber() {
+        return address.getHouseNumber();
+    }
+
+    public HouseType getHouseType() {
+        return houseType;
+    }
 }
